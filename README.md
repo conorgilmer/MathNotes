@@ -1,4 +1,5 @@
 # Math Notes
+Ok ok it is an excuse to use LaTeX...
 Notes for GMAT
 - Geometry
 - Algebra
