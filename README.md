@@ -11,8 +11,10 @@ Notes for GMAT
 - Fours sided figures
 - Triangles
 - Circles
+- Polygons
 - Volume Suface Area
 - Slope of Line
+- Length of a Line (Pythagoras)
 
 ##Algebra
 - Resloving Functions
