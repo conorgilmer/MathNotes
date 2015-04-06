@@ -299,9 +299,45 @@ pentagon is 540, hexagon is 720 and heptagon is 900 and octagon 1060 and so on..
 
 \newpage
 \subsection{Coordinate Geometry}
+\subsubsection{Plotting a line}
+To plot a line on the x-y axis if you have two points with co-ordinates $a = (1,1)$ and $y = (2,3)$ you plot the two points on the axis and draw a line between them.
+
+\begin{tikzpicture}
+    \draw [thin, gray, ->] (0,-1) -- (0,3)      % draw y-axis line
+        node [above, black] {$y$};              % add label for y-axis
+
+    \draw [thin, gray, ->] (-1,0) -- (3,0)      % draw x-axis line
+        node [right, black] {$x$};              % add label for x-axis
+
+    \draw [draw=red,ultra thick] (1,1) -- (3,2);% draw the graph
+
+    \node [left] at (1,1) {$(1,1)$};                % label y-intercept
+    \node [above] at (3,2) {$(3,2)$};               % label x-intercept
+\end{tikzpicture}
+
 \subsubsection{Length of a line between two points on the plane}
 Finding the length of a line on a plane, involves plotting it on an $x y $ axis. The length of a line can be worked out by using Pythagoras. So the length of a line from a (1,-3) and b (-1, 2) is $ \sqrt{2^{2} + (-5)^{2}}$.
  
+\begin{tikzpicture}
+    \draw [thin, gray, ->] (0,-3) -- (0,3)      % draw y-axis line
+        node [above, black] {$y$};              % add label for y-axis
+
+    \draw [thin, gray, ->] (-2,0) -- (3,0)      % draw x-axis line
+        node [right, black] {$x$};              % add label for x-axis
+
+    \draw [draw=red,ultra thick] (1,-3) -- (-1,2);% draw the graph
+
+    \node [right] at (1,-3) {$(1,-3)$};                % label y-intercept
+    \node [below] at (-1,2) {$(-1,2)$};                % label x-intercept
+    
+    \draw [draw=blue,ultra thin] (-1,2) -- (-1,-3);% draw the graph
+    \node [left] at (-1,-1) {$|(2 -(-3))| = 5$};
+    \draw [draw=blue,ultra thin] (-1,-3) -- (1,-3);% draw the graph
+    \node [below] at (0,-3) {$|(-1 -(-1))| = 2$}; 
+    
+\end{tikzpicture} 
+ 
+\newpage
 \subsubsection{Slope of a Line}
 There are two ways which get you the slope of a line one is with the co-ordinates the other with an equation which you resolve to look like y = mx + b where m is the slope of the line
 
