@@ -141,12 +141,18 @@ Parallel lines the angles are preserved, i.e. the angles made by the intersectin
 \subsubsection{Area of a Rectangle}
 \begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
 
-\coordinate [label=left:$C$] (A) at (-1.5cm,-1.cm);
-\coordinate [label=right:$A$] (C) at (1.5cm,-1.0cm);
-\coordinate [label=above:$B$] (B) at (1.5cm,1.0cm);
-\draw (A) -- node[above] {$h$} (B) -- node[right] {$a$} (C) -- node[below] {$b$} (A);
+\coordinate [label=left:$C$] (A) at (-1.5cm,-1.0cm);
+\coordinate [label=right:$B$] (B) at (1.5cm,-1.0cm);
+\coordinate [label=right:$A$] (C) at (1.5cm,1.0cm);
+\coordinate [label=above:$D$] (D) at (-1.5cm,1.0cm);
+
+\draw (A) -- node[above] {$width$} (B) -- node[right] {$height$} (C) -- node[below] {$width$} (D) -- node[left] {$height$} (A);
 
 \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+\draw (-1.5cm,-1.0cm) rectangle (-1.25cm,-0.75cm);
+
+\draw (-1.5cm,1.0cm) rectangle (-1.25cm,0.75cm);
+\draw (1.5cm,1.0cm) rectangle (1.25cm,0.75cm);
 
 \end{tikzpicture}
 
