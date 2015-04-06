@@ -1,9 +1,11 @@
-\documentclass[11pt]{report}
+\documentclass[11pt]{article}
 
 % Now we start the main document stuff
 \begin{document}
 
 \section{Boolean Algebra}
+Truth tables
+
 \subsection{AND}
 \begin{tabular}{lll|l}
 A & AND & B & Result \\
@@ -38,6 +40,8 @@ NOT & True & False \\
 
 
 \subsection{NAND}
+NOT AND
+
 \begin{tabular}{lll|l}
 A & NAND & B & Result \\
 \hline
@@ -49,6 +53,8 @@ False & NAND & False & True \\
 \end{tabular}
 
 \subsection{NOR}
+NOT OR
+
 \begin{tabular}{lll|l}
 A & NOR & B & Result \\
 \hline
@@ -58,6 +64,21 @@ False & NOR & True & False \\
 False & NOR & False & True \\
 \hline
 \end{tabular}
+
+
+\subsection{XOR}
+Exclusive OR
+
+\begin{tabular}{lll|l}
+A & XOR & B & Result \\
+\hline
+True & XOR & True & False \\
+True & XOR & False & True \\
+False & XOR & True & True \\
+False & XOR & False & False \\
+\hline
+\end{tabular}
+
 
 
 
