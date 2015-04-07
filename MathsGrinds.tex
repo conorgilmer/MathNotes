@@ -158,21 +158,21 @@ Parallel lines the angles are preserved, i.e. the angles made by the intersectin
 
 Area of a rectangle is the length of the sides multiplied together.
 \begin{equation}
-Area_{rectangle} = width * height
+Area_{\;rectangle} = width * height
 \end{equation}
 \subsubsection{Perimeter of a Rectangle}
 Is the sum of the 4 sides
 \begin{equation}
-Perimeter_{Rectangle} = or 2width + 2 heignt\\
-or\\
-Perimeter_{rectangle} = 2 ( width + height )
+Perimeter_{\;Rectangle} =  2 width + 2 heignt \\
+or \\
+Perimeter_{\;rectangle} = 2 ( width + height )
 \end{equation}
 
 \subsubsection{Square}
 Well a square is just a rectangle where all the sides are the same size, so all the rules apply but just are simpler.
 
 \subsubsection{Parallelogram}
-A parallelogram is a foursided figure where the the sides are parallel, opposite sides are equal and opposite angles are equal.
+A parallelogram is a four-sided figure where the the sides are parallel, opposite sides are equal and opposite angles are equal.
 The only property which changes is the area
 
 $Area_{Parallelogram} = base * perpendicular-height$
@@ -308,28 +308,47 @@ pentagon is 540, hexagon is 720 and heptagon is 900 and octagon 1060 and so on..
 \subsubsection{Plotting a line}
 To plot a line on the x-y axis if you have two points with co-ordinates $a = (1,1)$ and $y = (2,3)$ you plot the two points on the axis and draw a line between them.
 
+%\begin{tikzpicture}
+%    \draw [thin, gray, ->] (0,-1) -- (0,3)      % draw y-axis line
+%        node [above, black] {$y$};              % add label for y-axis
+%    \draw [thin, gray, ->] (-1,0) -- (3,0)      % draw x-axis line
+%        node [right, black] {$x$};              % add label for x-axis
+%    \draw [draw=red,ultra thick] (1,1) -- (3,2);% draw the graph
+%    \node [left] at (1,1) {$(1,1)$};                % label y-intercept
+%   \node [above] at (3,2) {$(3,2)$};               % label x-intercept
+%\end{tikzpicture}
+
+
 \begin{tikzpicture}
-    \draw [thin, gray, ->] (0,-1) -- (0,3)      % draw y-axis line
-        node [above, black] {$y$};              % add label for y-axis
-
-    \draw [thin, gray, ->] (-1,0) -- (3,0)      % draw x-axis line
-        node [right, black] {$x$};              % add label for x-axis
-
-    \draw [draw=red,ultra thick] (1,1) -- (3,2);% draw the graph
+\draw [thick,->] (0,0) -- (4.5,0) node[anchor=north west] {x axis};
+\draw [thick,->] (0,0) -- (0,4.5) node[anchor=south east] {y axis};
+\foreach \x in {0,1,2,3,4}
+    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {0,1,2,3,4}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+    
+\draw [draw=red,ultra thick] (1,1) -- (3,2);% draw the graph
 
     \node [left] at (1,1) {$(1,1)$};                % label y-intercept
     \node [above] at (3,2) {$(3,2)$};               % label x-intercept
 \end{tikzpicture}
 
+
 \subsubsection{Length of a line between two points on the plane}
 Finding the length of a line on a plane, involves plotting it on an $x y $ axis. The length of a line can be worked out by using Pythagoras. So the length of a line from a (1,-3) and b (-1, 2) is $ \sqrt{2^{2} + (-5)^{2}}$.
  
 \begin{tikzpicture}
-    \draw [thin, gray, ->] (0,-3) -- (0,3)      % draw y-axis line
+    \draw [thin, gray, ->] (0,-3.5) -- (0,2.5)      % draw y-axis line
         node [above, black] {$y$};              % add label for y-axis
 
-    \draw [thin, gray, ->] (-2,0) -- (3,0)      % draw x-axis line
+    \draw [thin, gray, ->] (-2.5,0) -- (2.5,0)      % draw x-axis line
         node [right, black] {$x$};              % add label for x-axis
+
+\foreach \x in {-2,-1, 0,1,2}
+    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {-3,-2,-1,0,1,2}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+    
 
     \draw [draw=red,ultra thick] (1,-3) -- (-1,2);% draw the graph
 
@@ -426,6 +445,26 @@ The \textit{absolute value} of a number 'a' is written as $|a|$.
 $ |a| = \sqrt{a^{2}}$ 
 
 The absolute value of a number is often used to get its value, ignoring the sign e.g. the length of a line, where the sign is the direction,
+
+
+\newpage
+\section{Arithmetic}
+\subsection{Statistics}
+
+\subsubsection{Average/Mean}
+In Statistics thhe \textit{Mean} is the average of the numbers (sometimes referred to as the \textit{arithmetic mean}.
+
+$
+Mean = \frac{A + B + C + D + ...}{Number of Numbers}
+$
+
+\subsubsection{Median}
+Roughly is the middle number of a sequence, it is either the middle number or the average of the 2 middle numbers.
+
+\subsubsection{Mode}
+The \textit{Mode} of a list of numbers is the most frequently occurring number or numbers.
+
+\subsubsection{Standard Deviation} 
 
 \newpage
 \section{Colophon}
