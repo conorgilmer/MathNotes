@@ -624,12 +624,13 @@ This often described as a $1$ in $3$ chance of occurring.
 \subsubsection{Probability Arithmetic}
 Rule of thumb in combining probability is if you have two events, and you want to know the probability of 
 \begin{itemize}
-\item Probability of Event A \textbf{AND} Event B =  P(E) * P(B)
-\item Probability of Event A \textbf{OR} Event B =  P(E) + P(B)
+\item Probability of Event A \textbf{AND} Event B =  P(A) * P(B)
+\item Probability of Event A \textbf{OR} Event B =  P(A) + P(B)
+\item Probability of an Event E \textbf{NOT} occurring P(NOT E) = 1 - P(E)
 \end{itemize}
 
 \textbf{e.g}
-If you throw two dice (Dice A and Dice B) at the same time, what are the chances (probability) of the number 6 been shown on (1) both the dice A AND dice B and (2) or either dice A OR dice B.
+If you throw two dice (Dice A and Dice B) at the same time, what are the chances (probability) of the number 6 been shown on (1) both the dice A AND dice B, (2) Probability or either dice A OR dice B being the number 6 and (3) chances of the number 6 NOT landing on both dice A AND dice B.
 
 (1)
 
@@ -645,6 +646,12 @@ P(A\;OR\;B) = \frac{1}{6} + \frac{1}{6} \\
 P(A\;OR\;B) = \frac{1 + 1}{6} = \frac{2}{6} = \frac{1}{3}
 \\$
 
+(3)
+
+$\\NOT\;(P(A\;AND\;B)) = 1 - (P(A) * P(B)) \\
+NOT \;P(A\;AND\;B) = 1 - (\frac{1}{6} * \frac{1}{6}) \\
+NOT \; P(A\;AND\;B) = 1 -(\frac{1 * 1}{6 * 6}) = 1 - (\frac{1}{36}) = \frac{36-35}{36} = \frac{35}{36}
+\\$
 
 \newpage
 \section{Colophon}
