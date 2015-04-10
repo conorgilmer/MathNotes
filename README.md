@@ -1,5 +1,6 @@
 # Math Notes
 Ok ok it is an excuse to use LaTeX especially the maths stuff..
+Really its broken into two documents one the theory and the other a one(or two) page of formulas
 
 Notes for GMAT mathematics 
 - Geometry
