@@ -228,6 +228,16 @@ You will find that often the numbers used in examples are triangles with sides 5
 
 \newpage
 \subsection{Circles}
+\begin{tikzpicture}
+\coordinate [label=below:$Center$] (A) at (2,2);
+\coordinate [label=right:$Point$] (B) at (4.5, 2);
+\draw (2,2) circle (2.5cm);
+\draw (A) -- node[above] {$Radius$} (B);
+\foreach \dot in {A, B} {
+  \fill (\dot) circle(2pt);
+  %\node[above] at (\dot) {\dot};
+}
+\end{tikzpicture}
 \subsubsection{Area of a Circle}
 \begin{equation}
 Area_{ Circle} = \pi r^ 2
