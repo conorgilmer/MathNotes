@@ -248,7 +248,18 @@ Circumference_{ Circle} = 2 \pi r
 \end{equation}
 \subsection{Sectors of a Circle}
 A sector of a Circle of is a portion of a circle like a slice of pizza or tart with two straight lines from the centre of the circle out to the edge. The Angle is the angle between the two straight lines from the centre of the circle.
-
+\begin{tikzpicture}
+\coordinate [label=below:$Center$] (A) at (2,2);
+\coordinate [label=right:$Point\;1$] (B) at (4.5, 2);
+\coordinate [label=right:$Point\;2$] (C) at (3.75, 3.75);
+\draw (2,2) circle (2.5cm);
+\draw (A) -- node[above] {$Radius$} (B);
+\draw (A) -- (C);
+\foreach \dot in {A, B, C} {
+  \fill (\dot) circle(2pt);
+  %\node[above] at (\dot) {\dot};
+}
+\end{tikzpicture}
 \subsubsection{Area of a Sector of a Circle}
 \begin{equation}
 Area_{ Sector\;of\;a\;Circle} = ( \frac{Angle }{ 360 }) \pi r^ 2
