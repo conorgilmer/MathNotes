@@ -242,8 +242,8 @@ You will find that often the numbers used in examples are triangles with sides 5
 \subsection{Circles}
 \begin{tikzpicture}
 \coordinate [label=below:$Center$] (A) at (2,2);
-\coordinate [label=right:$Point$] (B) at (4.5, 2);
-\draw (2,2) circle (2.5cm);
+\coordinate [label=right:$Point$] (B) at (4, 2);
+\draw (2,2) circle (2cm);
 \draw (A) -- node[above] {$Radius$} (B);
 \foreach \dot in {A, B} {
   \fill (\dot) circle(2pt);
@@ -262,9 +262,9 @@ Circumference_{ Circle} = 2 \pi r
 A sector of a Circle of is a portion of a circle like a slice of pizza or tart with two straight lines from the centre of the circle out to the edge. The Angle is the angle between the two straight lines from the centre of the circle.
 \begin{tikzpicture}
 \coordinate [label=below:$Center$] (A) at (2,2);
-\coordinate [label=right:$Point\;1$] (B) at (4.5, 2);
-\coordinate [label=right:$Point\;2$] (C) at (3.75, 3.75);
-\draw (2,2) circle (2.5cm);
+\coordinate [label=right:$Point\;1$] (B) at (4, 2);
+\coordinate [label=right:$Point\;2$] (C) at (3.4, 3.4);
+\draw (2,2) circle (2cm);
 \draw (A) -- node[above] {$Radius$} (B);
 \draw (A) -- (C);
 \foreach \dot in {A, B, C} {
@@ -656,14 +656,14 @@ NOT \; P(A\;AND\;B) = 1 -(\frac{1 * 1}{6 * 6}) = 1 - (\frac{1}{36}) = \frac{36-3
 \subsection{Sets}
 A Set is a collection of objects, in mathematics it is generally a collection of numbers but could be other objects.
 \begin{itemize}
-\item \textbf{Union} A Union B is all the contents of sets A and B
-\item \textbf{Intersection} A intersection B is the contents which are common to A and B 
+\item \textbf{Union} A Union B is all the contents of sets A and B - $A \cup B$
+\item \textbf{Intersection} A intersection B is the contents which are common to A and B - $A \cap B$ 
 \end{itemize}
 \subsubsection{Venn Diagram}
 Sets can be represented diagramatically using Venn Diagrams.
 \begin{center}
 \begin{tikzpicture}
-\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$U$};
+\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$A \cap B$};
 \begin{scope} % start of clip scope
 \clip (0,0) circle (1cm);
 \fill[gray] (1.5,0) circle (1cm);
@@ -672,6 +672,31 @@ Sets can be represented diagramatically using Venn Diagrams.
 \draw (1.5,0) circle (1cm) node[right] {$B$};
 \end{tikzpicture}
 \end{center}
+
+
+
+\def \setA{ (0,0) circle (1cm) }
+\def \setB{ (1.5,0) circle (1cm) }
+\def \setC{ (60:1.5) circle (1cm) }
+\def \setU{ (-2, -1.5) rectangle (3.5, 2.75) }
+\begin{center}
+\begin{tikzpicture}
+\draw \setU node[below left]{$A \cap B \cap \overline{\rm C}$};
+\begin{scope}
+\clip \setA;
+\fill[gray] \setB;
+\end{scope}
+\begin{scope}
+\clip \setA;
+\clip \setB;
+\fill[white] \setC;
+\end{scope}
+\draw \setA node[left] {$A$};
+\draw \setB node[right] {$B$};
+\draw \setC node {$C$};
+\end{tikzpicture}
+\end{center}
+
 
 \newpage
 \section{Colophon}
