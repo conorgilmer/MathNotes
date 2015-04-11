@@ -542,6 +542,18 @@ x = 3 \pm 3\sqrt{\frac{3}{2}} = 3 \pm 3\sqrt{\frac{6}{4}} \\
 x = 3 \pm 3\frac{\sqrt{6}}{\sqrt{4}} \\ 
 x = 3 \pm 3\frac{\sqrt{6}}{2} $ So you have two solutions.
 
+\subsection{Inequalities}
+\subsubsection{Symbols}
+\begin{tabular}{l|l|l}
+$Symbol$ & $Meaning$ & $Usage$  \\
+\hline
+$<$ & $Less\;than$ & $ 5 < 10$  \\
+$>$ & $Greater\;than$ & $ 51 > 49$  \\
+$\leq$ & $Less\;than\;or\;equal\;to$ & $ p \leq 10$  \\
+$\geq$ & $Greater\;than\;or\;equal\;to$ & $ Age \geq 18$  \\
+\hline
+\end{tabular}
+
 \newpage
 \section{Arithmetic}
 \subsection{Statistics}
@@ -661,6 +673,19 @@ A Set is a collection of objects, in mathematics it is generally a collection of
 \end{itemize}
 \subsubsection{Venn Diagram}
 Sets can be represented diagramatically using Venn Diagrams.
+
+\textbf{A Union B}
+\begin{center}
+\begin{tikzpicture}
+\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$A \cup B$};
+\fill[gray] (0,0) circle (1cm);
+\fill[gray] (1.5,0) circle (1cm);
+\draw (0,0) circle (1cm) node {$A$};
+\draw (1.5,0) circle (1cm) node {$B$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{A Intersection B}
 \begin{center}
 \begin{tikzpicture}
 \draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$A \cap B$};
@@ -674,7 +699,7 @@ Sets can be represented diagramatically using Venn Diagrams.
 \end{center}
 
 
-
+\textbf{A Intersection B NOT C}
 \def \setA{ (0,0) circle (1cm) }
 \def \setB{ (1.5,0) circle (1cm) }
 \def \setC{ (60:1.5) circle (1cm) }
