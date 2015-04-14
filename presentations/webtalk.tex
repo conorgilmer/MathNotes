@@ -1,0 +1,207 @@
+\documentclass[30pt,landscape,footrule]{foils}
+\usepackage[english,german]{babel}  % language support for german/english
+\usepackage[latin1]{inputenc}       % allow Latin1 characters
+\usepackage{ifvtex}
+\usepackage{ifpdf}
+% If we use vtex, we are likely to create pdf...
+\ifvtexpdf\pdftrue\fi
+\ifpdf
+\usepackage{pause}               % loads also color.sty
+\usepackage{background}
+\usepackage{graphicx}            % for including graphics
+\usepackage{geometry}
+\usepackage{hyperref}
+\ifvtex\relax
+\else
+%%\pdfcompresslevel=0
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+\else
+\usepackage[dvipdfm]{pause}      % loads also color.sty
+\usepackage[dvipdfm]{background}
+\usepackage[dvips]{graphicx}
+\usepackage[dvips]{geometry}
+\usepackage[dvipdfm]{hyperref}
+\fi
+\usepackage{tabularx}
+\usepackage{pp4link}
+\usepackage{mpmulti}
+\usepackage{amssymb}
+
+\geometry{headsep=3ex,hscale=0.9}
+\hypersetup{pdftitle={pp4extensions},
+  pdfsubject={Overview of the Internet},
+  pdfauthor={Conor Gilmer, IT Marketing Dept., Griffith College Dublin
+  <conor.gilmer@gcd.e>},
+  pdfkeywords={acrobat, ppower4},
+  pdfpagemode={FullScreen},
+  colorlinks={true},
+  linkcolor={red}
+  }
+
+
+% Set information for title slide and slide footers
+\title{A Overview of the Internet}
+\author{Conor Gilmer}
+\date{October 14, 2009}	
+
+
+\begin{document}
+\maketitle
+\parindent 0mm\raggedright
+%% Inserting this pauselevel into the Logo we will have the logo appear
+%% immediately. But we still need a \pause at the end of the page,
+%% otherwise the last page material will also come out first.
+%% In highlighted sections we need to keep the link colored for all
+%% levels, so better give a wide range for its appearance.
+%% Watch your step!
+\MyLogo{\pauselevel{highlight =1 :12}Internet and Web / \today \qquad
+    \Acrobatmenu{FirstPage}{back to start}\quad}
+
+\foilhead{Contents}
+List of Contents
+%%{\small
+\begin{itemize}
+\small{
+	\item \toplink{background}{Background} \qquad
+	\item \toplink{sengines}{Search Engines} \qquad
+	\item \toplink{altengines}{Alternative Search Engines} \qquad
+	\item \toplink{software}{Software} \qquad
+	\item \toplink{browsers}{Web Browsers} \qquad
+	\item \toplink{refernences}{References} \par	
+}
+\end{itemize}
+%%}
+
+\foilhead{Web and the Internet : Timeline}
+\toptarget{background}
+
+Chronology\\
+Arpanet :- Internetwork communication network that is distributed. nuclear war\\
+Protocols\\
+Telnet :- remote logging on\\
+FTP :- transfer of files\\
+Email :-\\
+Newsgroups :- foundation of the social element of the internet.\\
+
+Rise in home computing, games, graphics, offices, new tools\\
+Concepts :-  Vannevar Bush 1946 ``invented'' the internet\\
+Minitel(France Telecom/BT) 1982 - Terminal Online Services
+Computserve 1989
+Ted Nelson ``hypertext''\\
+Tim Berners Lee ``World Wide Web'' 1990ish\\
+1994 Netscape, explosion of the web\\
+By 1996 increasingly clear that finding things was difficult\\
+
+\foilhead{Software and Tools}
+\toptarget{software}
+\begin{itemize}
+\small{
+\item Gopher
+\item Usenet News Servers 
+\item Telnet :- Windows Telnet, TerraTerm, xTerm or Putty
+\item FTP :- Filezilla, WinFTP, CuteFTP
+\item Browsers :- lynx, Web Browsers
+}
+\end{itemize}
+
+
+\foilhead{Browsers}
+\toptarget{browsers}
+\definecolor{dimmed}{gray}{0.4}
+\pausecolors{magenta}{dimmed}{magenta}
+{\color{magenta}
+\begin{itemize}
+\small{
+\item Mosaic\pause
+\item Internet Explorer\pause
+\item Netscape\pause
+\item Mozilla\pause
+\item Opera\pause
+\item Google Chrome\pause
+}
+\end{itemize}
+}
+
+\foilhead{Search Engines}
+\toptarget{sengines}
+\definecolor{dimmed}{gray}{0.4}
+\pausecolors{magenta}{dimmed}{magenta}
+
+{\color{magenta}
+\begin{itemize}
+\small{
+\item Alta Vista\pause
+\item \href{www.ask.com} {Ask Jeeves}\pause
+\item Lycos\pause
+\item Webcrawler\pause
+\item \href{www.yahoo.com} {Yahoo}\pause
+\item \href{www.google.com} {Google}\pause
+\item MSN, Live and Bing\pause
+}
+\end{itemize}
+}
+
+\foilhead{Alternative Search Engines}
+\toptarget{altsengines}
+\definecolor{dimmed}{gray}{0.4}
+\pausecolors{magenta}{dimmed}{magenta}
+{\color{magenta}
+\begin{itemize}
+\small{
+\item Clusty\pause
+\item Cuil\pause
+\item Digg\pause
+\item Wikipedia\pause
+}
+\end{itemize}
+}
+
+
+\foilhead{The Future}
+\toptarget{future}
+\definecolor{dimmed}{gray}{0.4}
+\pausecolors{magenta}{dimmed}{magenta}
+{\color{magenta}
+What will Web 3.0 be?
+\begin{itemize}
+\small{
+\item Convergence of Search Engines, Catalogues, Chat Clients, Social Netorking, Twitter, Facebook etc
+\item Non Latin domain names! 2010
+\item Google SPDY Protocol replaicng http
+}
+\end{itemize}
+}
+
+
+
+\foilhead{Thanks for having a look}
+\pausecolorreset
+
+The slides should be available to download from 
+\href{http://conorg.gcd.ie/webtalk/}{http://conorg.gcd.ie/webtalk}
+Please email me with your comments and suggestions about this talk.\\
+Thank you for your time and cooperation!
+
+\foilhead{References}
+\toptarget{references}
+\begin{itemize}
+\small {
+\item Brink-Budgen, Roy Van Den (2004). ``Critical thinking for students: Learn the skills of critical assessment and effective argument'', Oxford : How to Books.
+\item Bush, V. (1945). ``As we may think.'' The Atlantic Monthly.
+\item Graham, L. and P. T. Metaxis (2003). ``Of course it's true; I saw it on the Internet!": critical thinking in the Internet era.'' Communications of the ACM 46(5): 70-75.
+\item Knight, Charles (2007) `The top 100 search engines Readwriteweb.com'' accessed 16/03/07 http://www.readwriteweb.com/archives/top\_100\_alternative\_search\_engines.php
+\item Lucas, I. and N. Helen (2000). ``Defining the Web: The Politics of Search Engines.'' Computer 33(1): 54-62.
+\item Metzger, M. J., A. J. Flanagan, et al. (2003). ``College student Web use, perceptions of information credibility, and verification behavior.'' Computers and education 41: 271-290.
+\item Morville, Peter (2005) ``Ambient Findability'', O Reilly, Sebastopol.
+}
+\end{itemize}
+
+
+\foilhead{Colophon}
+This document was created using \LaTeX{}. Initally it was wordprocessed using text editor $<${www.vim.org}$>$ and then rendered into pdf using pdfplatex. \\
+Version 2.7 of MiKTeX($<${www.miktex.org}$>$)\\ In researching this topic the Internet browser used was Mozilla Firefox  $<${www.getfirefox.org}$>$ and the Firefox extension Zotero $<${www.zotero.org}$>$ was used  in compiling websites consulted. The Vim plug-in SpellChecker.vim was used to correct my spelling, checking using an American, a British and a Canadian Dictionary.
+
+\copyright 2009 Conor Gilmer  all rights reserved.
+
+\end{document}
