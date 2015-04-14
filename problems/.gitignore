@@ -1,0 +1,22 @@
+# ignore latex compile files
+*.aux
+*.toc
+*.gz
+*.log
+*.dvi
+*.out
+
+# ignore temporary files
+*.tmp
+*.temp
+*~
+*.gz
+*.zip
+*.z
+
+# ignore compile directories
+build/
+
+# ignore test files
+test/
+*.test
