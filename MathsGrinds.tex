@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{amssymb,amsmath}
+\usepackage{float}
 \newcommand{\email}[1]{\texttt{#1}}
 \newcommand{\gmat}{GMAT}
 \newcommand{\vim}{\href{http://www.vim.org} {www.vim.org} }
@@ -420,7 +421,7 @@ A \textit{function} relates an input to an output, often the output is expressed
 e.g. $f(x) = x^2 - 6 $ is a function which you can plot on an x-y axes, where each point will $(x,f(x))$ . 
 
 
-
+\begin{table}
 \begin{tabular}{l|l|l}
 $x$ & $ x^{2} - 6 = f(x)$& $(x,\;f(x))$  \\
 \hline
@@ -433,8 +434,8 @@ $x$ & $ x^{2} - 6 = f(x)$& $(x,\;f(x))$  \\
 4 & $4^{2} -6 = 10$ & $(4,\;10)$ \\
 
 \end{tabular}
-
-
+\caption{\label{•}}
+\end{table}
 
 \newpage
 \section{Algebra}
@@ -586,7 +587,7 @@ Number\; of\; numbers\; in\; the\; squence\; =\; 5
 Mean = \frac{0 + 7 + 8 + 10 + 10}{5} =  7
 $
 
-
+\begin{table}[H]
 
 \begin{tabular}{l|ll}
 $x$ & $(x - 7)$ & $(x -7)^{2}$  \\
@@ -601,6 +602,8 @@ $x$ & $(x - 7)$ & $(x -7)^{2}$  \\
 Total & is & 68  \\
 \end{tabular}
 
+\caption{\label{tab:widgets}Calculating the Standard Deviation.}
+\end{table}
 
 $Standard\;Deviation \;\; \sigma = \sqrt{\frac{68}{5}}$
 
@@ -740,7 +743,7 @@ However since using the macbook a lot of late I use \TeX{} Live ( \href{https://
 %It was tested using the Adobe $^{\textregistered}$ Reader 7.0 (Version 7.0.3).
 
 
-K.A. Stroud\cite{stroudengmath} was my go to book in college for mathematics as well as the \textit{Red Notes}\cite{rednotes}, and as many in the irish educaiton system Holland and Madden books taught me maths\cite{hollandmadden} in school.
+K.A. Stroud\cite{stroudengmath} was my go to book in college for mathematics as well as the \textit{Red Notes}\cite{rednotes}, and as many in the irish education system Holland and Madden books taught me maths\cite{hollandmadden} in school.
 
 There are many helpful websites online one I found was \textit{Maths is Fun}\cite{mathsisfun}.
 
