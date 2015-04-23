@@ -37,5 +37,8 @@ Notes for GMAT mathematics
   - Standard Deviation
 
 
-
+#Additional 
+- overview of calculus
+- boolean algrbra
+- shorht notes
 
