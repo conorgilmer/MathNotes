@@ -9,6 +9,7 @@
 %	pdftex}	
 \usepackage{graphicx}
 \usepackage{tikz}
+
 \usepackage{amssymb,amsmath}
 \usepackage{float}
 \newcommand{\email}[1]{\texttt{#1}}
@@ -240,6 +241,49 @@ As a result the circle on the hypoteneuse is equal to the sum of the circle of t
 \end{equation}
 
 You will find that often the numbers used in examples are triangles with sides 5, 4 and 3, 10, 8 and 6 or 50, 40 and 30 which all neatly square etc.
+
+
+\newpage
+\textbf{Example 30 60 90 degree triangle}
+
+\begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
+
+\coordinate [label=left:$A$] (D) at (-.75cm,-1.0cm);
+\coordinate [label=right:$B$] (G) at (1.0cm,-1.0cm);
+\coordinate [label=above:$C$] (E) at (1.0cm,1.0cm);
+\draw (D) -- node[above] {$2$} (E) -- node[right] {$\sqrt{3}$} (G) -- node[below] {$1$} (D);
+
+\draw (1.0cm,-1.0cm) rectangle (0.75cm,-0.75cm);
+
+\end{tikzpicture}
+
+$ac^2 = ab^2 + bc^2 \\
+2^2 = 1^2 + bc^2 \\
+2^2 - 1^2 = bc^2 \\
+4-1 = bc^2 \\
+3 = bc^2 \\
+\sqrt{3} = bc$
+
+\begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
+
+\coordinate [label=left:$D$] (D) at (-.75cm,-1.0cm);
+\coordinate [label=right:$G$] (G) at (1.0cm,-1.0cm);
+\coordinate [label=above:$E$] (E) at (1.0cm,1.0cm);
+\draw (D) -- node[above] {$6$} (E) -- node[right] {$3\sqrt{3}$} (G) -- node[below] {$3$} (D);
+
+\draw (1.0cm,-1.0cm) rectangle (0.75cm,-0.75cm);
+
+\end{tikzpicture}
+
+
+$de^2 = dg^2 + ge^2 \\
+6^2 = 3^2 + ge^2 \\
+6^2 - 3^2 = ge^2 \\
+(3*2)^2 - (3*2)^2 = ge^2 \\
+bc = 3 *  ge \\
+3\sqrt{3} = 3 bc$
+
+
 
 \newpage
 \subsection{Circles}
@@ -627,12 +671,12 @@ $
 
 \subsubsection{Permutations}
 Permutations order does matter.
-${n\choose k} = \frac{n!}{(k-n)!}$
+${n\choose k} = \frac{n!}{(n-k)!}$
 If the number being selected is the same as the number of items i.e. $n=k$ then the fomula is just the factorial so $n!$.
 
 \subsubsection{Combinations}
 Combinations order does not matter
-${n\choose k} = \frac{n!}{k!(k-n)!}$
+${n\choose k} = \frac{n!}{k!(n-k)!}$
 
 \newpage
 \subsection{Probability}
@@ -762,10 +806,6 @@ There are many helpful websites online one I found was \textit{Maths is Fun}\cit
 \bibliographystyle{plain}
 \bibliography{ref}
 
-
-
-
 \copyright 2015 Conor Gilmer $<$\href{mailto:conor.gilmer@gmail.com}{conor.gilmer@gmail.com}$>$ all rights reserved.
 
 \end{document}
-
